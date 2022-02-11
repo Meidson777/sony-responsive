@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="shortcut icon" href="./src/img/LogoPlayStation.png" >
+  
+
+  <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+
+  <title>Sony - Web Responsive</title>
+</head>
+<body>
+
+      <div class="container">
+          <div class="logo">
+            <img src="./src/img/LogoPlayStation.png" alt="LogoPlayStation" height="40px">
+          </div>
+            <nav id="menuList">
+              <a href="#Console">Console</a>
+              <a href="#controller">Game Controllers</a>
+              <a href="#vr">VR Accessories</a>
+              <a href="#mediaRemote">Media Remotes</a>
+              <a href="#">Others</a>
+            </nav>           
+          <div class="menu">
+            <img src="./src/img/menu.png" alt="" height="20px" onclick="togglemenu()">           
+          </div>
+      </div>
+
+    <div class="row" id="Console">
+        <div class="col-1">
+          <h2>Console PlayStation 5</h2>
+          <h3>Descubra uma nova geração de jogos incríveis de PlayStation.</h3>
+          <!-- <p>(Compatible/Generic)</p> -->
+          <h4>$499.99</h4>
+          <button>Buy now</button>
+        </div>
+       <div class="col-2">
+          <img src="./src/img/p5.png" class="controller">
+          <div class="color-box"></div>
+      </div>
+    </div>
+
+    <div class="row" id="controller">
+        <div class="col-1">
+          <h2>Controle sem fio<br>DualSense™</h2>
+          <h3>Vá fundo na ação com o controle que oferece resposta tátil, gatilhos adaptáveis dinâmicos e microfone embutido.</h3>
+          <p>(Compatible/Generic)</p>
+          <h4>$49.99</h4>
+          <button>Buy now</button>
+        </div>
+        <div class="col-2">
+          <img src="./src/img/ps5controller.png" class="controller">
+          <div class="color-box"></div>
+      </div>
+    </div>
+    
+    <div class="row" id="mediaRemote">
+      <div class="col-1">
+        <h2>Controle de mídia</h2>
+        <h3>Conveniência e um layout intuitivo para você controlar filmes, serviços de streaming e muito mais no seu console PS5.</h3>
+        <p>(Compatible/Generic)</p>
+        <h4>$49.99</h4>
+        <button>Buy now</button>
+      </div>
+     <div class="col-2">
+        <img src="./src/img/media-remote.png" class="controller">
+        <div class="color-box"></div>
+    </div>
+    </div>
+
+      
+
+
+</body>
+
+<!-- Menu Responsive -->
+<script>
+
+  var menuList = document.getElementById("menuList");
+  
+  menuList.style.maxHeight= "0px";
+
+    function togglemenu()
+    {
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "160px";
+
+        }else{
+          menuList.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
+</html>
